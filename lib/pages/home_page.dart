@@ -57,6 +57,16 @@ class _HomePageState extends State<HomePage> {
                 Navigator.pushNamed(context, '/backgroundcolorpage');
               },
             ),
+
+            // Input Text Page
+            ListTile(
+              leading: Icon(Icons.text_fields),
+              title: Text("Input Text Page", style: TextStyle(color: Colors.white),),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.pushNamed(context, '/inputtextpage');
+              },
+            ),
           ],
         ),
       ),
